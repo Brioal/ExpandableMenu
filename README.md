@@ -1,6 +1,24 @@
 ### 效果图
 ![这里写图片描述](https://img-blog.csdn.net/20180328095846793?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTcxODAz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 ![这里写图片描述](https://img-blog.csdn.net/20180328095855780?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTcxODAz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+### 使用方式
+#### 1.在项目的build.gradle内添加以下代码
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://www.jitpack.io' }
+		}
+	}
+```
+#### 2. 在app的build.gradle内添加以下代码
+##### 最新版本为:[![](https://www.jitpack.io/v/Brioal/ExpandableMenu.svg)](https://www.jitpack.io/#Brioal/ExpandableMenu)
+```
+	dependencies {
+	        implementation 'com.github.Brioal:ExpandableMenu:1.0'
+	}
+```
+
 #### 本文想试着从头开始讲解,中间贴的代码只是部分的,如果需要全部代码请翻到最后,有造好的轮子和源码.
 ### 需求:
 #### 如效果图所示的效果大家应该见过很多了,但是很多都是把每个菜单的按钮的样式基本上固定了,虽然可以用但是对于不同的项目来说风格真的能搭配上吗?能不能做到每个菜单样式都能自己定义而且不用太过于麻烦?
@@ -456,4 +474,4 @@ public class ExpandableMenu extends ViewGroup {
 }
 
 ```
-### 轮子地址:[ExpandableMenu](https://github.com/Brioal/ExpandableMenu)
+
